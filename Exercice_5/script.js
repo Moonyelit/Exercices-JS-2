@@ -15,6 +15,7 @@ console.log(images);
 
 
 
+
 // images.addEventListener('mouseover' , function initialImage () {
 //     image.src = "images/image1_2.jpg"; 
 // });
