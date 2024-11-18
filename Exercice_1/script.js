@@ -1,6 +1,6 @@
 let image = document.getElementById('image1');
 
-image.addEventListener('mouseover' , function initialImage  () {
+image.addEventListener('mouseover' , function initialImage () {
     image.src = "images/image1_2.jpg"; 
 });
 
