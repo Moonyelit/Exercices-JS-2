@@ -1,7 +1,7 @@
-let formKeyboard = document.querySelector('body');
+let formKeyboard = document.querySelector('form');
 
-formKeyboard.addEventListener('keydown' , function keyboardPress  () {
-    alert("Vous avez appuyé sur une touché !")
+formKeyboard.addEventListener('keydown' , function keyboardPress  (event) {
+    alert("Vous avez appuyé sur la touche " + event.key)
 });
 
 console.log(formKeyboard);
