@@ -1,15 +1,15 @@
 let images = document.querySelectorAll('img');
 
-
+function changeImage () {
 images.forEach(image => {
-    image.addEventListener('mouseover', function changeImage () {
+    image.addEventListener('mouseover', 'eventtarget'
     images[1].src = "images/image1_2.jpg"; 
     images[2].src = "images/image2_2.jpg"; 
     images[3].src = "images/image3_2.jpg"; 
     images[4].src = "images/image4_2.jpg"; 
     images[5].src = "images/image5_2.jpg"; 
 });
-});
+)};
 
 console.log(images);
 
