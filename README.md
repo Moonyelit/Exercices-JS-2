@@ -30,34 +30,3 @@ Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image
 
 
 
-
-
-// Sélectionne toutes les images
-let images = document.querySelectorAll('img');
-
-// Fonction pour changer l'image au survol
-function changeImage() {
-    images.forEach(image => {
-        // Stocke l'URL d'origine et l'URL de remplacement
-        const originalSrc = image.src;
-        const hoverSrc = originalSrc.replace('.jpg', '_2.jpg');
-
-        // Écoute l'événement "mouseover" pour remplacer l'image
-        image.addEventListener('mouseover', () => {
-            image.src = hoverSrc;
-        });
-
-        // Écoute l'événement "mouseout" pour revenir à l'image d'origine
-        image.addEventListener('mouseout', () => {
-            image.src = originalSrc;
-        });
-    });
-}
-
-// Appelle la fonction
-changeImage();
-
-console.log(images);
-
-
-
